@@ -3160,6 +3160,12 @@ input, select, textarea {
 			.spotlights > section > .content {
 				padding: 4em 4em 2em 4em ;
 			}
+		
+			/* make this one NOT fixed */
+
+			.spotlights > section > .fixed {
+				background-attachment: scroll;
+			}
 
 		}
 
