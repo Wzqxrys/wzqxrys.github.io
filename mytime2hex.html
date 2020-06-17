@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Adapted version of
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MyTime 2 Hex</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="projects.html" class="title">Projects</a>
+				<nav>
+					<ul>
+						<li><a href="mytime2hex.html" class="active">MyTime2Hex</a></li>
+						<!--
+						<li><a href="mytime.html">MyTime</a></li>
+						<li><a href="lifeline.html">Lifeline</a></li>
+						<li><a href="painttool.html">PaintTool</a></li>
+						<li><a href="slots.html">ToebeanSlots</a></li>
+						<li><a href="heliotohades.html">HeliostoHades</a></li>
+						<li><a href="contentviewer.html">ContentViewer</a></li>
+						<li><a href="treegen.html">TreeGen</a></li>
+						-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper style1-alt">
+						<div class="inner">
+							<h1 class="major">MyTime 2 Hex - Twitch Chat Hex Strategy Game</h1>
+							<h2>Overview</h2>
+							<p>MyTime 2 Hex - Twitch chat hex strategy game, cooperative up to 4 players vs The Streamer.</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/mt2hex-mix.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>Why it started</h2>
+							<p>I wanted to make and play a turn based strategy on hexagons. I’ve tried to code a hex system before but only got so far functionality wise. This time around I was confident I could make a hex game and tie twitch chat gameplay into it.</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/mt2hex-ui.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>What I learnt</h2>
+							<p>
+								I used enumerators and data structures from the beginning, learning how to properly utilize them along the way.<br/>
+								It was my first time tackling a lobby system for a number of waiting players, custom chat to include viewers in the stream,<br/>
+								a hex grid system and a turn system to handle the game state.
+							</p>
+							<br/>
+							<h2>How it works</h2>
+							<p>
+								While game is connected live to the viewers wanting to play, they each type ‘!join’ adding them to the lobby, <br/>
+								when the game is wanting lobbied players to join, the top 4 will be asked to type ‘!ready’<br/>
+								AFK players that fail to reply with ready will be placed on top of the lobby waiting for next game.<br/>
+								The amount of players still needed determine how many remaining lobbied players are asked to type !ready in chat, <br/>
+								this process repeats until the game-player-list is full (4) or lobby-player-list is out of viewers to ask.
+								Player’s controls a Catbox of their chosen colour that can move, jump, collect and throw shurikoins, on a hexagonal grid, taken turns one by one until all Octaminions have been squished or terminated.
+							</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/mt2hex-players.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>Where next?</h2>
+							<p>The octaminions currently need controls and action states, allowing them to fight back the players.</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/mt2hex-latest.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>If I did it again?</h2>
+							<p>I would focus longer on bringing functionality and usability to the hex grid data management system.</p>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/mt2hex-wb.jpg" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+
+				<!-- Features
+					<section id="main" class="wrapper style1-alt">
+						<div class="inner">	
+							<section class="features2">
+								<article>
+									<a href="mytime.html#main" class="image"><img src="images/pic05.jpg" alt="" /></a>
+									<h3 class="major">MyTime - A Spectacle in Time</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+									<a href="#" class="button">Read more</a>
+									<br/>
+								</article>
+								<article>
+									<a href="slots.html#main" class="image"><img src="images/pic05.jpg" alt="" /></a>
+									<h3 class="major">Toebean Slots - Twitch Game</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+									<a href="#" class="button right">Read more</a>
+									<br/>
+								</article>
+							</section>
+						</div>
+					</section>
+				 -->
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="index.html" class="button small">Home</a></li>
+						<li><a href="sitemap.html#main" class="button small">Sitemap</a></li>
+						<li><a href="index.html">&copy; WZQXRYS</a>. All rights reserved.</li>
+						<li>Adaption designed from: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="#header" class="button small scrolly">Back to top</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
