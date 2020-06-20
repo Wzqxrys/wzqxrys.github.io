@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Adapted version of
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tree Gen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="projects.html" class="title">Projects</a>
+				<nav>
+					<ul>
+						<li><a href="mytime2hex.html">MyTime2Hex</a></li>
+						<!--<li><a href="mytime.html">MyTime</a></li>-->
+						<li><a href="lifeline.html">Lifeline</a></li>
+						<!--
+						<li><a href="painttool.html">PaintTool</a></li>
+						<li><a href="slots.html">ToebeanSlots</a></li>
+						<li><a href="heliotohades.html">HeliostoHades</a></li>
+						<li><a href="contentviewer.html">ContentViewer</a></li>
+						-->
+						<li><a href="treegen.html" class="active">TreeGen</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper style1-alt">
+						<div class="inner">
+							<h1 class="major">TreeGen - Procedurally Generated Trees</h1>
+							<p>Not designed for small devices below 960 x 560.</p>
+							<iframe class="image game" frameborder="0" src="https://itch.io/embed-upload/1624819?color=0a0a26" allowfullscreen="" width="960" height="560"><a href="https://wzqxrys.itch.io/treegenerator">Play Tree Generator on itch.io</a></iframe>
+							
+							
+							
+							<h2>Overview</h2>
+							<p>Procedurally generates trees on a HTML5 web app.</p>
+							<br/>
+							<h2>Why it started</h2>
+							<p>I wondered what it would take to randomly generate trees or other parts of nature like flowers and shrubs. This led me down the path of L systems and other methods of doing exactly that.</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/treegen-phase1.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>What I learnt</h2>
+							<p>
+								Over the course of 3 main iterations of the same project I learnt how important scale, object management and self-looping functions are for this to work correctly.<br/>
+								Phase one was using only object oriented programming (OOP) to make a tree generate, I soon learnt how taxing the whole process was on the system from the amount of instances and I needed to implement some limits.<br/>
+								Phase two was using only data structures which was limiting but a good lesson in the importance of scaling data.<br/>
+								Phase three I made use of both OOP and data structures. During this final phase I was making good use of self-looping functions so the branches would create more branches which came with its own set of challenges like infinite loops and testing difficulty when something was broken.
+							</p>
+							<br/>
+							<h2>How it works</h2>
+							<p>
+								I create the first branch standing upright with a thick branch, it then creates 1 branch.<br/>
+								Each branch from this point onwards has a chance of creating up to 3 branches of varying angles or terminating, turning into a leaf. This process repeats up the chain and is capped at a certain number of branches since the root branch.<br/>
+								As the branches get created they are reduced in size creating a somewhat realistic looking tree like structure.<br/>
+							</p>
+							<br/>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="row-2"><span class="image fit"><img src="images/treegen-phase3.png" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+							<h2>Where next?</h2>
+							<p>If I need 2d trees in a project I’m working on in the future I may look at this again as a potential asset creation tool.</p>
+							<br/>
+							<h2>If I did it again?</h2>
+							<p>I would generate the tree using OOP and save it after creation in a data structure. Allowing post creation modification and waving leaves / branches.</p>
+							<section>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<iframe frameborder="0" src="https://itch.io/embed/475288?bg_color=0a0a26&amp;fg_color=eee&amp;link_color=195e12&amp;border_color=eee" width="552" height="167"><a href="https://wzqxrys.itch.io/treegenerator">Tree Generator by Wzqxrys</a></iframe>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="index.html" class="button small">Home</a></li>
+						<li><a href="sitemap.html#main" class="button small">Sitemap</a></li>
+						<li><a href="index.html">&copy; WZQXRYS</a>. All rights reserved.</li>
+						<li>Adaption designed from: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="#header" class="button small scrolly">Back to top</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

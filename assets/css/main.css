@@ -1898,11 +1898,11 @@ input, select, textarea {
 		display: inline-block;
 		font-size: 0.6em;
 		font-weight: bold;
-		height: calc(4.75em + 2px);
+		height: calc(4.5em + 2px);
 		letter-spacing: 0.25em;
-		line-height: 4.75em;
+		line-height: 4.5em;
 		outline: 0;
-		padding: 0 3.75em;
+		padding: 0 3.5em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -1956,7 +1956,7 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.5em;
+			font-size: 0.6em;
 		}
 
 		input[type="submit"].large,
@@ -2757,6 +2757,11 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		
+		.image.game {
+			margin: 0 0 1em 0;
+			width: 100%;
+		}
 
 /* List */
 
